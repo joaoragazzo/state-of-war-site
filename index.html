@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>State of War</title>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <!--Setup the icon-->
+    <link rel="icon" href="images/state of war.png">
+
+    <!--Import Bootstrap and styles-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/index.css">
+
+
+    <!--Import google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    
+
+  </head>
+  <body>
+    <div id="big-img"></div>
+    <div style="position:absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">
+      <div id="message">
+        <div class="row row-cols-5 rowbar">
+          <div class="col botao">
+            <button type="button" class="btn btn-primary" id="pack_de_armas">SERVIDOR</button>
+          </div>
+          <div class="col botao">
+            <button type="button" class="btn btn-primary" id="pack_de_armas">REGRAS</button>
+          </div>
+          <div class="col img"><img src="images/state of war.png" height="192px"></div>
+          <div class="col botao">
+            <button type="button" class="btn btn-primary" id="pack_de_armas">DOAÇÕES</button>
+          </div>
+          <div class="col botao">
+            <button type="button" class="btn btn-primary" id="pack_de_armas">CONTATO</button>
+          </div>
+        </div>
+        <div class="servidor">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

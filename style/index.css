@@ -1,0 +1,80 @@
+html {
+    height: 100%;
+}
+
+body { 
+    background: #1d1d1d; 
+    color: rgba(0,0,0,0.87); 
+    font-family: Roboto, Helvetica, Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    height: 100%;
+}
+
+#message { 
+    background: rgba(255, 255, 255, 0.384); 
+    width: max-content;
+    margin: 100px auto 16px; 
+    padding: 32px 24px; 
+    border-radius: 12px; 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+}
+      
+#message h2 { 
+    color: #e23636; 
+    font-weight: bold; 
+    font-size: 16px; 
+    margin: 0 0 8px; 
+}
+     
+#rowbar {
+    text-align: center !important;
+}
+
+@media (max-width: 600px) {
+    body, #message { 
+        margin-top: 0; 
+        background: white; 
+        box-shadow: none; 
+    }
+        
+    body { 
+        border-top: 16px solid #ffa100; 
+    }
+  }
+  
+#big-img {
+    background-image: url("../images/background.jpg") !important; 
+    background-repeat: no-repeat !important; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center;
+    filter: blur(4px); 
+    -webkit-filter: blur(4px);
+}
+
+.botao {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.botao button{
+    width: 200px !important;
+    white-space: nowrap;
+    background-color: #c92727 !important;
+    border-color: #961c1c !important;
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue' !important;
+    font-size: 25px;
+    text-align: center !important;
+    box-shadow: 6px 6px 12px 0px #00000098;
+}
+
+.rowbar {
+    object-position: 50%;
+    text-align: center;
+    vertical-align: middle !important;
+    display: flex;
+    align-items: center;
+}

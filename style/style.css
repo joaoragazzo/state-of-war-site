@@ -1,0 +1,230 @@
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: black;
+}
+
+
+#main{
+    background: rgba(255, 255, 255, 0.384); 
+    margin: 65px auto 0px; 
+    padding: 32px 24px; 
+    border-radius: 12px;
+    width: 1250px;
+    z-index: 1;
+    position: flex;
+}
+
+
+#main h1{
+    color: #c92727; 
+    font-weight: bold; 
+    margin: 0 0px;
+    text-align: center; 
+    font-family: 'Bebas Neue'; 
+    font-size: 100px;
+    padding-bottom: 40px;
+}
+
+.col{
+    justify-content: center !important;
+    position: relative !important;
+}
+
+.col span{
+    position: absolute;
+    font-family: 'Comfortaa';
+    color: #961c1c;
+    margin-top: 10px;
+    margin-left: 0px;
+    background-color: white;
+    background-size: 120%;
+    border-radius: 20px;
+    padding: 1px 10px 1px 10px;
+    font-weight: bolder;
+}
+
+.rol{
+    white-space: nowrap;
+    position: absolute
+    
+}
+
+#money_page{
+    display: none;
+}
+
+#weapons_page{
+    display: block;
+}
+
+#bases_page {
+    display: none;
+}
+
+#misc_page {
+    display: none;
+}
+
+#how_to_donate_page {
+    display: none;
+}
+.container {
+    position: relative !important;
+    object-position: middle !important;
+    text-align: middle !important;
+    white-space: nowrap;
+}
+
+.container small {
+    display: absolute;
+    text-align: center;
+    object-position: center;
+    font-size: 20px;
+}
+
+.botao {
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+
+}
+
+.botao button{
+    width: 200px !important;
+    white-space: nowrap;
+    background-color: #c92727 !important;
+    border-color: #961c1c !important;
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue' !important;
+    font-size: 25px;
+    text-align: center !important;
+    box-shadow: 6px 6px 12px 0px #00000098;
+    vertical-align: middle;
+}
+
+.item {
+    background: rgba(88, 88, 88, 0.13); 
+    border-radius: 12px; 
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.descricao p{
+    font-family: 'Fjalla One', cursive;
+    align-items: inline-flex;
+    align-content: center;
+}
+
+.descricao {
+    text-align: center;
+}
+
+.descricao h2{
+    font-family: 'Mitr', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.descricao span{
+    text-align: justify;
+    text-justify: inter-word;
+    display: inline-block !important;
+}
+
+.descricao img{
+    padding: 1px;
+    margin-right: 10px ;
+}
+
+.imagem {
+    background: rgba(255, 255, 255, 0.267); 
+    margin: 40px auto 16px; 
+    width: max-content;
+    border-radius: 12px; 
+    padding: 20px;
+    display: block;
+    align-items: middle;
+    max-width: 260px;
+    max-height: 400px;
+    box-sizing: content-box;
+    
+}
+
+.item img {
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+.item h3{
+    color: #961c1c;
+    font-family: 'Bebas Neue';
+    margin-bottom: 0px;
+    font-size: 50px;
+    vertical-align: middle;
+}
+
+.imagem span{
+    font-family: 'Mitr', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.best-sellers{
+    position: absolute;
+    float: left;
+    margin-top: 5px;
+    margin-left: 13px;
+    z-index: 5;
+}
+
+.how_to_donate{
+    background: rgba(255, 255, 255, 0.267); 
+    width: max-content;
+    border-radius: 12px; 
+    padding: 20px;
+    display: block;
+    align-items: middle;
+    max-width: 260px;
+    max-height: 400px;
+    box-sizing: content-box;
+    text-align: center;
+    
+}
+
+.how_to_donate h2 {
+    color: #961c1c;
+    font-family: 'Bebas Neue'; 
+    font-size: 45px;
+}
+
+.how_to_donate span{
+    font-family: 'Fjalla One', cursive;
+}
+
+
+#big-img{
+    background-image: url("../images/background.jpg") !important; 
+    background-repeat: no-repeat !important; 
+    height: 100%; 
+    background-position: center;
+    filter: blur(4px); 
+    -webkit-filter: blur(4px);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

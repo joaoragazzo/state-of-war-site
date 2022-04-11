@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>State of War</title>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <!--Setup the icon-->
+    <link rel="icon" href="images/state of war.png">
+
+    <!--Import Bootstrap and styles-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="syles/style.css">
+
+
+    <!--Import google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style media="screen">
+      html{height: 100%;}
+      body { background: #1d1d1d; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; height: 100%;}
+      #message { background: rgba(255, 255, 255, 0.384); max-width: 450px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 12px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);}
+      #message h2 { color: #e23636; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgb(0, 0, 0); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; color: rgb(0, 0, 0); text-align: justify;}
+      #message a { display: block; text-align: center; background: #202020; text-decoration: none; color: white; padding: 16px; border-radius: 12px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); color: whitesmoke }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+      #big-img{background-image: url("images/background.jpg") !important; background-repeat: no-repeat !important; height: 100%; background-size: cover; background-position: center;
+    filter: blur(4px); -webkit-filter: blur(4px);}
+    </style>
+
+  </head>
+  <body>
+    <div id="big-img"></div>
+    <div style="position:absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">
+      <div id="message">
+        <h2 style="text-align: center; font-family: 'Bebas Neue', cursive; font-size: 32px;">ATENÇÃO!</h2>
+        <h1 style="text-align: center;"><i>Última etapa para a verificação</i></h1>
+        <p>Para vincular o seu Discord ao sitema do State of War, <b>copie o a linha em destaque abaixo e cole na aba de verificação</b> do nosso servidor do Discord</p>
+        <a id="code" style="font-family: 'Source Code Pro', monospace;">Alguma coisa deu errado!</a>
+        <p id="load" style="margin-bottom: 0px;">O registro deste código permitirá vincular a sua conta Steam ao nosso sistema integrado. Dessa forma, o nosso suporte e o nosso banco de dados será mais dinâmico e adaptado as suas necessidades.</p>
+        <br>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col" style="text-align:center;">
+            <a href="https://discord.gg/Nf8pqZW9rH" style="border-radius: 100px; text-align: center;">
+              <img src="icons/discord.svg" height="25px">
+            </a>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+      </div>
+      <p id="load" style="color: whitesmoke !important">Criado e desenvolvido por jp_kkjk#7254</p>
+    </div>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const myParam = urlParams.get('code');
+      if(myParam !== null){
+        document.getElementById("code").innerHTML = "!code " + myParam
+      }
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
