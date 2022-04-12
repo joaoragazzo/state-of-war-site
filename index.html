@@ -19,32 +19,70 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-    
-
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+   
   </head>
   <body>
     <div id="big-img"></div>
-    <div style="position:absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">
+    <div style="position:absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">
       <div id="message">
         <div class="row row-cols-5 rowbar">
           <div class="col botao">
-            <button type="button" class="btn btn-primary" id="pack_de_armas">SERVIDOR</button>
+            <button type="button" class="btn btn-primary" onclick="pressButton('servidor')">SERVIDOR</button>
           </div>
           <div class="col botao">
-            <button type="button" class="btn btn-primary" id="pack_de_armas">REGRAS</button>
+            <button type="button" class="btn btn-primary" onclick="pressButton('regras')">REGRAS</button>
           </div>
-          <div class="col img"><img src="images/state of war.png" height="192px"></div>
+          <div class="col img"><img src="images/state of war.png" height="162px"></div>
           <div class="col botao">
-            <button type="button" class="btn btn-primary" id="pack_de_armas">DOAÇÕES</button>
+            <button type="button" class="btn btn-primary" onclick="doacoes()">DOAÇÕES</button>
           </div>
           <div class="col botao">
-            <button type="button" class="btn btn-primary" id="pack_de_armas">CONTATO</button>
+            <button type="button" class="btn btn-primary" onclick="pressButton('contato')">CONTATO</button>
           </div>
         </div>
-        <div class="servidor">
+        <div class="row" id="contato" style="display: none;">
+          <div class="col-8">
+            <div class="info-contato">
+              <h1>INFORMAÇÕES PARA CONTATO</h1>
+                <div class="info-contato-2">
+                  <p>Nós usamos essencialmente o nosso servidor do Discord para 
+                  fins comunicativos com os nossos jogadores. Além disso, através do nosso servidor do
+                  Discord você poderá criar Tickets de suporte, criar ou entrar em clans, conhecer novos
+                  jogadores e mandar/requisitar provas de raid.</p>
+                  <p>É de suma importância a sua presença dentro do nosso servidor para receber comunicados e
+                  avisos da parte administrativa.</p> 
+                  <p>Ao lado, clique em <b>"Connect"</b>, ou <a href="https://discord.gg/Nf8pqZW9rH">clique aqui</a> para poder juntar-se a nossa comunidade e ficar por dentro
+                  de comunicados e notícias, bem como conhecer e encontrar outros jogadores que também 
+                  estão no <i>State of War</i>.</p> 
+                  <p>Tenha ciência de que, ao se conectar com o nosso servidor de DayZ, iremos considerar que você já
+                    esta em nosso Discord e está por dentro das notícias e comunicados da nossa administração. As regras
+                    serão aplicadas a todos os jogadores dentro do nosso servidor de DayZ, estando ou não em nosso Discord.
+                  </p>
+                </div>
+            </div>
+          </div>
+          <div class="discord col-4">
+            <iframe src="https://discord.com/widget?id=947237264596041728&theme=dark" width="350" height="510" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" style="float: right"></iframe>
+          </div>
         </div>
-      </div>
+        <div class="row info-servidor-parent" id="servidor" style="display: flex; margin-left: 16px; margin-right: 16px;">
+          <div class="col info-servidor">
+            <div class="serverlist" style="text-align: center; margin-bottom: 20px;">
+              <div class="text-server">
+                <h1>VENHA SOBREVIVER COM A GENTE</h1>
+                <small><i>STATE OF WAR</i></small>
+              </div>
+              <img src="images/serverlist.png" height="200" style="border-radius: 20px;">
+            </div>
+            <div class="server-info-info">
+              <p><i>Para juntar-se a nossa comunidade é simples! Basta baixar e instalar Day Z Standalone, nossos mods e filtrar
+                por "State of War" no seu Launcher de preferência! Mas lembre-se... o vazio causado pela humanidade a beira de 
+                seu colapso podem mexer com a sua mente e te deixar louco. Você tem coragem de enfrentar esse mundo apocalíptico?</i>
+            </div>
+          </div>
+        </div>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>

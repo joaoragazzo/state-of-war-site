@@ -11,6 +11,10 @@ body {
     height: 100%;
 }
 
+p {
+    text-indent: 40px;
+}
+
 #message { 
     background: rgba(255, 255, 255, 0.384); 
     width: max-content;
@@ -30,6 +34,7 @@ body {
      
 #rowbar {
     text-align: center !important;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 600px) {
@@ -77,4 +82,70 @@ body {
     vertical-align: middle !important;
     display: flex;
     align-items: center;
+    margin-bottom: 25px;
+}
+
+.discord {
+    float: right !important;
+}
+
+.info-contato {
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.007); 
+    backdrop-filter: blur(2px); 
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 30px;
+    padding: 2em
+}
+
+.info-contato h1 {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Bebas Neue'; 
+    color: #c92727;
+}
+
+.info-contato-2 {
+    text-align: justify;
+    height: 24em;
+    width: 42em;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.info-servidor {
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.007); 
+    backdrop-filter: blur(2px); 
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 30px;
+    padding: 2em;
+    width: min-content
+
+}
+
+.server-info-info {
+    text-align: justify;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.serverlist h1{
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Bebas Neue'; 
+    color: #c92727;
+}
+
+.serverlist small {
+    font-size: 2em;
+    font-family: 'Bebas Neue'; 
+    color: #c92727;
+    text-align: center;
+}
+
+.text-server h1{
+    line-height: 20px;
 }
